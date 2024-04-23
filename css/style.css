@@ -1,0 +1,142 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* root variable */
+:root {
+    --color-primary: #219F95;
+    --color-secondary-dark: #234894;
+    --color-secondary-light: #AFCEDD;
+    --color-body: #696969;
+    --color-heading: #1E1E1E;
+    --color-white: #fff;
+}
+html {
+    font-size: 62.5%;
+}
+h1,
+h2,
+h3 {
+    color: var(--color-heading);
+    font-weight: 900;
+}
+h1 {
+    font-size: 2.2rem;
+    margin: 3rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+body,
+button {
+color: var(--color-body);
+font-size: 1.4rem;
+}
+.header {
+    display: flex;
+    align-items: center;
+    
+    margin: 3rem;
+}
+.number {
+    color: var(--color-secondary-dark);
+    background-color: var(--color-secondary-light);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-left:1rem ;
+}
+.header-2 {
+    color: var(--color-secondary-dark);
+    font-weight: 600;
+}
+.date {
+    color: var(--color-body);
+    margin-right: 8rem;
+    font-size: 1.2rem;
+}
+.content-2 {
+    margin-right: 3rem;
+    margin-top: -1rem;
+}
+.card-content {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+.content-3 {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+.icon-content {
+    font-weight: 700;
+    font-size: 1.8;
+    color: var(--color-heading);
+    margin-right: 1rem;
+}
+.btn {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5rem;
+}
+@media screen and (min-width:600px) {
+    .content {
+       columns: 2;
+       
+    }
+    .items {
+        position: relative;
+        top: 3.6rem;
+    }
+}
+@media screen and (min-width:900px) {
+    .content {
+       columns: 3;
+       
+    }
+    /* .items-2 {
+        position: relative;
+        top: 4rem;
+    } */
+    .items-3 {
+        position: relative;
+        top: 4.2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2.1rem;
+    }
+    body {
+        font-size: 1.7rem;
+    }
+    .date {
+        font-size: 1.5rem;
+    }
+    .card-content {
+        font-size: 1.5rem;
+    }
+    .icon-content {
+        font-size: 2.1rem;
+    }
+}
+
+
+    
+
